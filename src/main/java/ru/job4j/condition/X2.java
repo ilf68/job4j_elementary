@@ -14,4 +14,5 @@ public class X2 {
         int result = X2.calc(a, b, c, x);
         System.out.println(result);
     }
+
 }
