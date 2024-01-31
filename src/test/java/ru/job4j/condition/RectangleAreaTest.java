@@ -35,4 +35,13 @@ class RectangleAreaTest {
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
+    @Test
+    void whenP18K1Dot25Square20() {
+        int expected = 20;
+        int p = 18;
+        double k = 1.25;
+        double output = RectangleArea.square(p, k);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
+    }
+
 }
