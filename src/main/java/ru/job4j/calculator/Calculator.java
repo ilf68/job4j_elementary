@@ -1,41 +1,45 @@
 package ru.job4j.calculator;
 
+import java.util.Scanner;
+
 public class Calculator {
 
-    public static void main(String[] args) {
-        int one = 1;
-        int two = 2;
-        int six = 6;
-        int four = 4;
-        int five = 5;
-        int onePlusTwo = one + two;
-        int sixDivTwo = six / two;
-        int fiveMinusTwo = five - two;
-        int fourTimeTwo = four * two;
+    private static int x = 10;
 
-        System.out.println(onePlusTwo);
-        System.out.println(sixDivTwo);
-        System.out.println(fiveMinusTwo);
-        System.out.println(fourTimeTwo);
+    public int multiply(int a) {
+        return x * a;
+    }
+    public int divide(int a) {
+        return a / x ;
+    }
+    public int sum(int a) {
+        return x + a;
+    }
+    public static int minus(int a) {
+        return a - x;
+    }
+    public int sumAllOperation(int a) {
+        return divide(a) + minus(a) + sum(a) + multiply(a);
+
+    }
+
+    public static void main(String[] args) {
+        Calculator calculator = new Calculator();
+        System.out.println("Введите любое целое число: ");
+        int a = new Scanner(System.in).nextInt();
+        int sum1 = calculator.sum(a);
+        int divide1 = calculator.divide(a);
+        int multiply1 = calculator.multiply(a);
+        int minus1 = calculator.minus(a);
+        int result = calculator.sumAllOperation(a);
+        System.out.println("Сумма х и " + a + " = " + sum1);
+        System.out.println(a + " делить на "+ x + " = " + divide1);
+        System.out.println(a + " умножить на "+ x + " = " + multiply1);
+        System.out.println(a + " минус " + x + " = " + minus1);
+        System.out.println("Сумма всех опреаций над " +  a + " при х " + x + " = " + result);
+
+
+
     }
 }
-        /* public class Calculator {
 
-    public static void plus(int first, int second) {
-        int result = first + second;
-        System.out.println(result);
-    }
-
-    public static void minus(int first, int second) {
-        int result = first - second;
-        System.out.println(result);
-    }
-
-    public static void main(String[] args) {
-        plus(1, 2);
-        plus(10, 11);
-        minus(7, 3);
-        minus(2, 6);
-    }
-
-}*/
