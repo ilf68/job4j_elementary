@@ -1,8 +1,8 @@
 package ru.job4j.math;
 
 public class MathFunction {
-    public static double sum(double first, double second) {
-        return first + second;
+    public static double sum(double first1, double second) {
+        return first1 + second;
     }
 
     public static double multiply(double first, double second) {
