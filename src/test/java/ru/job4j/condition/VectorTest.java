@@ -3,7 +3,8 @@ package ru.job4j.condition;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
-class VectorTest {@Test
+class VectorTest {
+    @Test
 void whenVectors58And05ThenResult5dot10() {
     int x1 = 5, y1 = 5, x2 = 0, y2 = 5;
     String expected = "(5, 10)";
