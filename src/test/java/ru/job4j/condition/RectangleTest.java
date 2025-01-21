@@ -24,7 +24,7 @@ class RectangleTest {
     }
 
     @Test
-    void whenLength7AndWidth24ThenDiagonal25() {
+    void whenLength9AndWidth20ThenDiagonal521dot93() {
         double length = 9;
         double width = 20;
         double expected = 21.93;
