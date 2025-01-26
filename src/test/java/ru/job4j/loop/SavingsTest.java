@@ -33,4 +33,14 @@ class SavingsTest {
         int expected = 7;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenGoal2000Deposit200Percent20ThenYears3() {
+        double goal = 2000;
+        double annualDeposit = 200;
+        double percent = 20;
+        int result = Savings.years(goal, annualDeposit, percent);
+        int expected = 7;
+        assertThat(result).isEqualTo(expected);
+    }
 }
