@@ -22,7 +22,7 @@ public class NumberPyramid {
     public static void main(String[] args) {
         System.out.println("Number pyramid of height 4:");
         draw(4);
-        System.out.println("Number pyramid of height 9:");
-        draw(9);
+        System.out.println("Number pyramid of height 8:");
+        draw(8);
     }
 }
