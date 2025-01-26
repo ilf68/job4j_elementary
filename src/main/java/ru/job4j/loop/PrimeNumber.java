@@ -2,12 +2,12 @@ package ru.job4j.loop;
 
 public class PrimeNumber {
     public static int calc(int finish) {
-        int counter = 0;
+        int count = 0;
         for (int i = 2; i <= finish; i++) {
             if (CheckPrimeNumber.check(i)) {
-                counter++;
+                count++;
             }
         }
-        return counter;
+        return count;
     }
 }
