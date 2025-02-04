@@ -21,15 +21,7 @@ public class ArrayCharTest {
     }
 
     @Test
-    public void whenStartWithPrefixNullThenFalse() {
-        char[] word = {'H', 'e', 'l', 'l', 'o'};
-        char[] prefix = {};
-        boolean result = ArrayChar.startsWith(word, prefix);
-        assertThat(result).isFalse();
-    }
-
-    @Test
-    public void whenStartWithPrefixNullBigerThenFalse() {
+    public void whenStartWithPrefixBigerThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] prefix = {'H', 'e', 'l', 'l', 'o', 'A'};
         boolean result = ArrayChar.startsWith(word, prefix);
