@@ -5,6 +5,16 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 class TwoNumberSumTest {
+
+    @Test
+    void whenThreeNumbersYesTarget() {
+        int[] array = {5, 6, 7};
+        int target = 11;
+        int[] result = TwoNumberSum.getIndexes(array, target);
+        int[] expected = {0, 1};
+        assertThat(result).isEqualTo(expected);
+    }
+
     @Test
     void whenTwoEqualsNumbersYesTarget() {
         int[] array = {5, 5};
